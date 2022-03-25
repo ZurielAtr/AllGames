@@ -1,0 +1,428 @@
+/* ---------- RESET CSS DEFAULT VALUES ---------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- GLOBALS ---------- */
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.container {
+    width: 70%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-top {
+    width: 70%;
+    margin: 0 auto;
+}
+
+:root {
+    --background: #0e181a;
+    --body: #66777a;
+    --footer: #16262b;
+    --yellow: #d6b220;
+    --white: white;
+}
+
+h1,
+h2 {
+    color: var(--white);
+}
+
+.justify {
+    text-align: justify;
+}
+
+.margen {
+    padding: 3rem 0 3rem 0;
+}
+
+/* ---------- PX TO REM ---------- */
+
+body {
+    font-size: 16px;
+    font-family: Futura Std;
+    color: var(--body);
+}
+
+/* ---------- HEADER ---------- */
+
+.full {
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+}
+
+.header-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.header-container::before {
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 15%, var(--yellow));
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.nav-bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    position: relative;
+    width: 90%;
+    z-index: 3;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.text-header {
+    color: var(--white);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+}
+
+.text-header h1 {
+    font-size: 7rem;
+}
+
+.text-header p {
+    font-size: 2.1rem;
+}
+
+/* ---------- PRINCIPAL SECTION ---------- */
+
+.btn {
+    background: var(--yellow);
+    border: none;
+    border-radius: 0.8rem;
+    color: white;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    font-family: Futura Std;
+    box-shadow: 0px 0px 10px var(--yellow);
+}
+
+.b-text {
+    font-weight: bold;
+    font-size: 0.7rem;
+    color: var(--text);
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    gap: 7rem;
+    justify-content: center;
+}
+
+.principal-text h2 {
+    font-size: 2rem;
+    padding: 0 0 3rem 0;
+}
+
+.h2-text {
+    padding: 0 0 3rem 0;
+}
+
+.section {
+    background-color: var(--background);
+}
+
+span {
+    color: var(--yellow);
+}
+
+.img-w {
+    width: 100%;
+    height: auto;
+}
+
+/* ---------- footer ---------- */
+
+footer {
+    background-color: var(--footer);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    color: white;
+}
+
+.footer p {
+    font-weight: 200;
+}
+
+.social img {
+    width: 1.5rem;
+    color: white;
+}
+
+/* ---------- History page  ---------- */
+
+.back {
+    align-items: center;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.header-container-pages {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100%;
+}
+
+.header-container-pages::before {
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 15%, var(--yellow));
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+}
+
+.history {
+    background-image: url(../img/history.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.other-pages {
+    padding: 0.5rem 0;
+}
+
+.topic {
+    align-items: flex-end;
+    display: flex;
+    font-size: 3rem;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 0 4rem 0;
+    width: 85%;
+    z-index: 1;
+}
+
+.history-text {
+    text-align: justify;
+    padding: 3rem 0 1rem 0;
+}
+.primer-juego {
+    width: 100%;
+    margin: 0 0 2rem 0;
+}
+
+/* ---------- Arcade page ---------- */
+
+.arcade {
+    background-image: url(../img/arcade.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+}
+
+.arcade-content {
+    padding: 1.5rem 0 1rem 0;
+    display: flex;
+    gap: 3rem;
+}
+
+.arcade-text {
+    width: 50%;
+}
+
+.palanca {
+    width: 50%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+/* ---------- Rol page ---------- */
+
+.rol {
+    background-image: url(../img/rolgame.jpg);
+    background-size: cover;
+}
+
+.colums {
+    display: flex;
+    gap: 3rem;
+}
+
+.colum {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 0 3rem 0;
+    gap: 3rem;
+}
+
+.colum img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ---------- Estrategy page ---------- */
+
+.estrategy {
+    background-image: url(../img/ajedrez.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-edit {
+    height: 250px;
+}
+
+/* ---------- Adventure page ---------- */
+
+.adventure {
+    background-image: url(../img/adventuregame.jpg);
+    background-size: cover;
+}
+
+/* ---------- Galery page ---------- */
+
+.galery {
+    background-image: url(../img/assassins.jpg);
+    background-size: cover;
+}
+
+.container-galery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.a-g {
+    width: 33%;
+}
+
+.img-g {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ----------- Full Image ---------- */
+
+.container-full {
+    width: 65%;
+    margin: 0 auto;
+    padding: 5rem 0 1rem 0;
+}
+
+.full-img {
+    width: 100%;
+}
+
+.btn-g {
+    margin: 0 0 2rem 0;
+}
+
+.btns-flex {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+/* ---------- Suscripción --------- */
+
+.form-container {
+    color: var(--white);
+    padding: 0 0 4rem 0;
+}
+
+.sub {
+    padding: 8rem 0 0 0;
+    text-align: center;
+    font-size: 5rem;
+    color: var(--yellow);
+}
+
+.form-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.form_input {
+    padding: 1rem;
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+    font-family: Futura Std;
+    background-color: var(--footer);
+    resize: none;
+}
+
+.sexo {
+    display: flex;
+    gap: 3rem;
+}
+
+.btn-form {
+    background: var(--footer);
+    border: none;
+    border-radius: 0.8rem;
+    color: white;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    font-family: Futura Std;
+}
+
+.left {
+    margin-left: 5rem;
+}
+
+.M, .H {
+    width: 16px;
+    height: 16px;
+    border-radius: 12px;
+    margin: none;
+    appearance: none;
+    background-color: var(--footer);
+}
+
+.M:checked {
+    background-color: var(--yellow);
+}
+
+.H:checked {
+    background-color: var(--yellow);
+}
+
+#trucazo {
+    display: none;
+}
