@@ -32,9 +32,14 @@ a {
     --white: white;
 }
 
-h1,
+h1 {
+    color: var(--white);
+    font-weight: 900;
+}
+
 h2 {
     color: var(--white);
+    font-weight: 900;
 }
 
 .justify {
@@ -49,7 +54,7 @@ h2 {
 
 body {
     font-size: 16px;
-    font-family: Futura Std;
+    font-family: 'Spartan', sans-serif;
     color: var(--body);
 }
 
@@ -96,6 +101,10 @@ body {
     flex-wrap: wrap;
 }
 
+.nav a {
+    font-weight: 500;
+}
+
 .text-header {
     color: var(--white);
     display: flex;
@@ -112,7 +121,7 @@ body {
 }
 
 .text-header p {
-    font-size: 2.1rem;
+    font-size: 2rem;
 }
 
 /* ---------- PRINCIPAL SECTION ---------- */
@@ -144,6 +153,7 @@ body {
 
 .principal-text h2 {
     font-size: 2rem;
+    font-weight: 900;
     padding: 0 0 3rem 0;
 }
 
@@ -168,6 +178,10 @@ span {
 
 footer {
     background-color: var(--footer);
+}
+
+footer h3 {
+    font-weight: 900;
 }
 
 .footer {
